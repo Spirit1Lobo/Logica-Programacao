@@ -1,0 +1,21 @@
+/*iremos aprender semana que vem */
+* {
+    margin: 0;
+    pedding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+head {
+    background-color: white; /*Mudar a cor de fundo*/
+}
+
+main{
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+}
