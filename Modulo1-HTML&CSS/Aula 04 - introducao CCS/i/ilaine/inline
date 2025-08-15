@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline</title>
+</head>
+<body> style="background: ligtblue;">
+    <main>
+        <section>
+            <h1> Receita de Bolo</h1>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, error sed minima quas similique placeat laudantium accusantium rerum quia non, distinctio accusamus cumque incidunt. Ea quas explicabo recusandae non praesentium.
+            </p>
+        
+        </section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam qui at, quasi facere placeat laborum similique, vero ipsa numquam deleniti quas perferendis ab, vel commodi modi consectetur ea? Voluptas, quam!</p>
+    </main>
+    
+</body>
+</html>
