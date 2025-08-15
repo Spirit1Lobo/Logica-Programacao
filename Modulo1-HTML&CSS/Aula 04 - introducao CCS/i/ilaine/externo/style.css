@@ -17,5 +17,10 @@ main{
     font-size: 16px;
 }
 p{
-    font-size: 16px;
+    font-size: 1.5em;
+}
+
+main > section > div > o {
+    color: red;
+
 }
