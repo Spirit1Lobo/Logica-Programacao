@@ -1,0 +1,67 @@
+body {
+    margin: auto;
+    width: 50vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    color: rgb(44, 62, 80);
+    text-align: justify;
+}
+
+#Titulo1{
+   color: rgb(44, 62, 80);
+    background-color: #ECF0F1;
+    font-size: 36px;
+}
+
+.Vermelho{
+    color: #E74C3C;
+    background-color: #ECF0F1;
+    text-align: justify;
+    font-size: 28px;
+}
+
+#Titulo2{
+    color:#30AE60;
+    background-color:#E9F7EF;
+    text-align: center;
+    font-size: 36px;
+}
+.Verde{
+    color: #30AE60;
+    background-color: #E9F7EF;
+    text-align: justify;
+    font-size: 28px;
+}
+
+#Titulo3{
+    color: #F39C11;
+    background-color: #FFF3E6;
+    text-align: center;
+    font-size: 36px;
+}
+
+.Laranja{
+    color: #F39C11;
+    background-color: #FFF3E6;
+    text-align: justify;
+    font-size: 28px;
+}
+
+#Titulo4{
+    color:#8E44AD;
+    background-color: #F5E6F5;
+    text-align: center;
+    font-size: 36px;
+}
+
+.Roxo{
+    color:#8E44AD;
+    background-color: #F5E6F5;
+    text-align: justify;
+    font-size: 28px;
+}
