@@ -1,0 +1,40 @@
+main{
+    width: 50vw;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#Titulo1{
+    color: aqua;
+    background-color: rgb(26, 113, 235);
+    text-align: center;
+}
+
+.texto-titulo1 {
+    color: brown;
+    background-color: rgb(95, 3, 3);
+}
+
+#Titulo2{
+    color: green;
+    background-color: rgb(109, 205, 19);
+    text-align: center;
+}
+.texto-titulo2{
+    color: aqua;
+    background-color: rgb(1, 26, 26);
+}
+
+#Titulo3{
+    color: darkgoldenrod;
+    background-color: orange;
+    text-align: center;
+}
+
+.texto-titulo3{
+    color: blue;
+    background-color: rgb(1, 1, 54);
+}
