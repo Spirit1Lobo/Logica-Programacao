@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Formulario de Cadastro</h2>
+
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="Sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+
+            <label for="data de nascimento">Data de nascimento:</label>
+            <input type="date" name="data de nascimento" id="data nascimento">
+
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep" id="cep" required>
+
+            <label for="rua"></label>
+            <input type="text" name="rua" id="rua" readonly>
+
+            <label for="numero"></label>
+            <input type="text" name="nuemro" id="nuemro">
+
+            <label for="cidade"> Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de janeiro</option>
+                <option value="ba"> Bahia</option>
+                <option value="mg"> Minas Gerais</option>
+                <option value="es">Espirito Santo</option>
+            </select>
+
+            <div classe="buttons">
+                <button type="submit">Enviar</button>
+                <button type="submit">Limpar</button>
+            </div>
+
+
+
+        </form>
+    </main>
+    
+</body>
+</html>
