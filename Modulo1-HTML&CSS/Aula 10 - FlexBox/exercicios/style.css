@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center; /* define o eixo principal*/
+    align-content: stretch;
+    width: 50vw;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    gap: 10px;
+}
+
+.item{
+    flex-basis: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
