@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Alunos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f5f5f5;
+    }
+ 
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+ 
+    .form {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+ 
+    input, button {
+      padding: 10px;
+      font-size: 14px;
+    }
+ 
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      transition: background 0.3s;
+    }
+ 
+    button:hover {
+      background: #0056b3;
+    }
+ 
+    .filtros {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+ 
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: auto;
+    }
+ 
+    li {
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
+ 
+    .aprovado {
+      background: #28a745; /* Verde */
+    }
+ 
+    .reprovado {
+      background: #dc3545; /* Vermelho */
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Alunos</h1>
+ 
+  <div class="form">
+    <input type="text" id="nome" placeholder="Nome do aluno">
+    <input type="number" id="nota" placeholder="Nota" min="0" max="10">
+    <button onclick="cadastrar()">Cadastrar</button>
+  </div>
+ 
+  <div class="filtros">
+    <button onclick="mostrarTodos()">Mostrar Todos</button>
+    <button onclick="filtrarAprovados()">Mostrar Aprovados</button>
+  </div>
+ 
+  <ul id="listaAlunos"></ul>
+ 
+  <script>
+    let alunos = [];
+    let filtrando = false;
+ 
+    function cadastrar() {
+      const nome = document.getElementById("nome").value.trim();
+      const nota = parseFloat(document.getElementById("nota").value);
+ 
+      if (nome === "" || isNaN(nota)) {
+        alert("Preencha o nome e a nota corretamente!");
+        return;
+      }
+ 
+      alunos.push({ nome, nota });
+      document.getElementById("nome").value = "";
+      document.getElementById("nota").value = "";
+ 
+      mostrarTodos();
+    }
+ 
+    function exibir(lista) {
+      const ul = document.getElementById("listaAlunos");
+      ul.innerHTML = "";
+ 
+      lista.forEach(aluno => {
+        const li = document.createElement("li");
+        li.textContent = `${aluno.nome} - Nota: ${aluno.nota}`;
+        li.className = aluno.nota >= 7 ? "aprovado" : "reprovado";
+        ul.appendChild(li);
+      });
+    }
+ 
+    function mostrarTodos() {
+      filtrando = false;
+      exibir(alunos);
+    }
+ 
+    function filtrarAprovados() {
+      filtrando = true;
+      const aprovados = alunos.filter(a => a.nota >= 7);
+      exibir(aprovados);
+    }
+  </script>
+</body>
+</html>
+ 
