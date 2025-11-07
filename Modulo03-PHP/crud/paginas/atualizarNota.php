@@ -51,12 +51,17 @@
             $stmt->bind_param("s", $curso);
             $stmt->execute();
             $resultado = $stmt->get_result();
-
-
-
+            echo "
+            <tr>
+            <td>{$row['id']}</td>
+            <td>{$row['nome']}</td>
+            <td>{$row['sobrenome']}</td>
+            <td><input type='number' name=nota_atividade'{$row['id']}'></td>
+            <td></td>
+            </tr>
+            ";
         }
-
-
+            
     }
     ?>
     </main>
